@@ -12,10 +12,14 @@
    ========================================================================== */
 
 html {
-  color: #222;
+  background-color: #f2e9ec;
+  color: #221b1d;
   font-size: 1em;
   line-height: 1.4;
+  margin: 0px;
+  padding: 0px;
 }
+
 
 /*
  * Remove text-shadow in selection highlight:
@@ -87,6 +91,88 @@ textarea {
    Author's custom styles
    ========================================================================== */
 
+   @font-face {
+     font-family: Quattrocento;
+     src: url("../img/font/Quattrocento/Quattrocento-Regular.ttf");
+     font-family: another_day_v2;
+     src: url("../img/font/another_day_v2/AnotherDayV2.ttf");
+   }
+
+   /* ----------------------Nav bar */
+   nav { 
+     background-color: #b78f99;
+     color: white;
+     /* height: 33vh; */
+     margin: 0;
+     }
+
+     nav container { 
+      display: flex;
+      flex-direction: wrap;
+      justify-content: flex-start;
+      align-items: center;
+      /* position: relative; */
+      /* flex-wrap: wrap; */
+      }
+/* -------------------Menu navigation */
+      container menu{
+        margin: 0px;
+        padding: 0px;
+      }
+
+  container menu ul {
+    display: flex;
+  }
+  container menu ul li {
+  text-decoration: none;
+  list-style-type: none;
+
+  }
+
+  container menu ul li a {
+    color: white;
+  
+    text-decoration: none;
+    margin: 0.2em;
+    font-size: small;
+  }
+
+
+ /* --------------------- menu social medias */
+  container social {
+    clear: bottom right;
+    }
+    
+  container social ul li {
+    text-decoration: none;
+    list-style-type: none;
+  }
+
+
+container social ul li a {
+  font-size: small;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: flex-end;
+  list-style-type: none;
+  color: white;
+  margin: auto;
+  text-decoration:none;
+  }
+
+/* ---------Header */
+
+  header img {
+    width: 220px;
+    display: block;
+    margin: auto;
+  }
+
+  h1 {
+ font-family: Quattrocento;
+ text-transform: uppercase;
+  }
+  
 /* ==========================================================================
    Helper classes
    ========================================================================== */
