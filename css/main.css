@@ -162,6 +162,7 @@ container social ul li a {
 
 /* ---------Header */
 
+
   header img {
     width: 220px;
     display: block;
@@ -175,6 +176,7 @@ container social ul li a {
  font-size: 1em;
  line-height: 1.1em;
  color: #b78f99;
+ margin-top: 3em;
   }
 
   #presentation {
@@ -186,6 +188,79 @@ container social ul li a {
     margin : 4vh;
     background-size: cover;
   }
+
+/* ---------Main */
+
+#container_main {
+background-color: floralwhite;
+padding-top: 0.1em;
+}
+
+
+#duo {
+  display: flex;
+  background-color: #f2e9ec;
+
+
+ }
+
+ .col {
+  flex: 1; 
+  justify-content: space-evenly;
+ }
+
+#product_1 {
+  background-image: url("../img/headphones.png");
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  height: 150px;
+  margin: 0.1em 0.1em;
+  padding: 10px;
+
+  
+  }
+
+  h4{
+    font-family: Montserrat;
+    font-size: 0.7rem;
+    margin: 0.7em;
+    text-align: center;
+  }
+
+#comment_product_1 {
+  height: 150px;
+  background-color: #baa4a6;
+  color:#f2e9ec;
+  line-height: 1.2em;
+  font-size: 0.7em;
+  padding: 10px;
+  text-align: justify;
+  text-align: center;
+}
+
+.price {
+  color: #e3e8e7;
+  font-family: another_day_v2;
+  font-size: 4em;
+  text-align: center;
+  margin-bottom: 0rem;
+  margin-top: 26px;
+}
+.button {
+  background-color: #f2e9ec;
+  color: #221b1d;
+  margin: auto;
+  border:#eddad6 1em;
+}
+
+.button:hover {
+  background: #baa4a6;
+  color: #f2e9ec;
+  border:#f2e9ec 1em;
+
+
+
 /* ==========================================================================
    Helper classes
    ========================================================================== */
