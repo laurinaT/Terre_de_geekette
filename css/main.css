@@ -11,6 +11,10 @@
    Base styles: opinionated defaults
    ========================================================================== */
 
+* {
+  box-sizing: border-box;
+}
+
 html {
   background-color: #f2e9ec;
   color: #221b1d;
@@ -97,7 +101,18 @@ textarea {
      font-family: another_day_v2;
      src: url("../img/font/Paradise_Thoughts_Typeface/TTF/ParadiseThoughts-Regular.ttf");
    }
+  
+   p {
+     margin: 0.6em;
+     font-family: Quattrocento;
+   }
 
+   h4{
+    font-family: Montserrat;
+    font-size: 1rem;
+    margin: 0.7em;
+    text-align: center;
+  }
    /* ----------------------Nav bar */
    nav { 
      background-color: #b78f99;
@@ -133,7 +148,7 @@ textarea {
     color: white;
   
     text-decoration: none;
-    margin: 0.2em;
+    margin: 0.5em;
     font-size: small;
   }
 
@@ -176,12 +191,11 @@ container social ul li a {
  font-size: 1em;
  line-height: 1.1em;
  color: #b78f99;
- margin-top: 3em;
+ margin: 2em 0px;
   }
 
   #presentation {
-    /* background-image: url("../img/office.jpg");
-    opacity: 0.7; */
+  
     background-position: center;
     font-family: Quattrocento;
     text-align: justify;
@@ -197,16 +211,13 @@ padding-top: 0.1em;
 }
 
 
-#duo {
+.duo {
   display: flex;
   background-color: #f2e9ec;
-
-
  }
 
  .col {
   flex: 1; 
-  justify-content: space-evenly;
  }
 
 #product_1 {
@@ -214,43 +225,33 @@ padding-top: 0.1em;
   background-size: cover;
   background-position: center;
   background-repeat: no-repeat;
-  height: 150px;
-  margin: 0.1em 0.1em;
-  padding: 10px;
+ }
 
   
-  }
 
-  h4{
-    font-family: Montserrat;
-    font-size: 0.7rem;
-    margin: 0.7em;
-    text-align: center;
-  }
-
-#comment_product_1 {
-  height: 150px;
+.comment_product {
   background-color: #baa4a6;
   color:#f2e9ec;
   line-height: 1.2em;
   font-size: 0.7em;
-  padding: 10px;
-  text-align: justify;
   text-align: center;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-around;
+  align-content: space-around;
 }
 
 .price {
   color: #e3e8e7;
   font-family: another_day_v2;
-  font-size: 4em;
+  font-size: 3em;
   text-align: center;
-  margin-bottom: 0rem;
-  margin-top: 26px;
 }
+
 .button {
   background-color: #f2e9ec;
   color: #221b1d;
-  margin: auto;
   border:#eddad6 1em;
 }
 
@@ -258,8 +259,25 @@ padding-top: 0.1em;
   background: #baa4a6;
   color: #f2e9ec;
   border:#f2e9ec 1em;
+}
+  /* <!-- ---------Produit 2-------- --> */
 
+#product_2 {
+    background-image: url("../img/notebook.jpg");
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+   }
+  
 
+/* <!-- ---------Produit 3-------- --> */
+
+#product_3 {
+  background-image: url("../img/claviers.png");
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+ }
 
 /* ==========================================================================
    Helper classes
