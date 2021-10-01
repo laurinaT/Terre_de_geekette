@@ -226,7 +226,6 @@ padding-bottom: 0.5em;
 #product_1 {
   background-image: url("../img/headphones.png");
   background-size: cover;
-  background-position: center;
   background-repeat: no-repeat;
  }
 
