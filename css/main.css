@@ -108,10 +108,11 @@ textarea {
    }
 
    h4{
-    font-family: Montserrat;
-    font-size: 1rem;
-    margin: 0.7em;
+    font-family: Quattrocento regular;
+    text-transform: uppercase;
     text-align: center;
+    font-size: 0.8rem;
+    margin: 0.8em;
   }
    /* ----------------------Nav bar */
    nav { 
@@ -208,12 +209,14 @@ container social ul li a {
 #container_main {
 background-color: floralwhite;
 padding-top: 0.1em;
+padding-bottom: 0.5em;
 }
 
 
 .duo {
   display: flex;
   background-color: #f2e9ec;
+  border: floralwhite 2px;
  }
 
  .col {
@@ -278,6 +281,32 @@ padding-top: 0.1em;
   background-position: center;
   background-repeat: no-repeat;
  }
+
+ #byebye {
+   background-color: floralwhite;
+ }
+
+/* <!-- ---------Footer-------- --> */
+
+section {
+background-color: #b78f99 ;
+height: 10vh;
+margin: 0px;
+padding: 0px;
+display: flex;
+}
+
+section a {
+  font-size: small;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: flex-end;
+  list-style-type: none;
+  color: #f2e9ec;
+  margin: auto;
+  text-decoration:none;
+}
+
 
 /* ==========================================================================
    Helper classes
