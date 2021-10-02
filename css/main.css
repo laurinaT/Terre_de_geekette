@@ -11,11 +11,19 @@
    Base styles: opinionated defaults
    ========================================================================== */
 
+* {
+  box-sizing: border-box;
+}
+
 html {
-  color: #222;
+  background-color: #f2e9ec;
+  color: #221b1d;
   font-size: 1em;
   line-height: 1.4;
+  margin: 0px;
+  padding: 0px;
 }
+
 
 /*
  * Remove text-shadow in selection highlight:
@@ -86,6 +94,219 @@ textarea {
 /* ==========================================================================
    Author's custom styles
    ========================================================================== */
+
+   @font-face {
+     font-family: Quattrocento;
+     src: url("../img/font/Quattrocento/Quattrocento-Regular.ttf");
+     font-family: another_day_v2;
+     src: url("../img/font/Paradise_Thoughts_Typeface/TTF/ParadiseThoughts-Regular.ttf");
+   }
+  
+   p {
+     margin: 0.6em;
+     font-family: Quattrocento;
+   }
+
+   h4{
+    font-family: Quattrocento regular;
+    text-transform: uppercase;
+    text-align: center;
+    font-size: 0.8rem;
+    margin: 0.8em;
+  }
+   /* ----------------------Nav bar */
+   nav { 
+     background-color: #b78f99;
+     color: white;
+     /* height: 33vh; */
+     margin: 0;
+     }
+
+     nav container { 
+      display: flex;
+      flex-direction: wrap;
+      justify-content: flex-start;
+      align-items: center;
+      /* position: relative; */
+      /* flex-wrap: wrap; */
+      }
+/* -------------------Menu navigation */
+      container menu{
+        margin: 0px;
+        padding: 0px;
+      }
+
+  container menu ul {
+    display: flex;
+  }
+  container menu ul li {
+  text-decoration: none;
+  list-style-type: none;
+
+  }
+
+  container menu ul li a {
+    color: white;
+  
+    text-decoration: none;
+    margin: 0.5em;
+    font-size: small;
+  }
+
+
+ /* --------------------- menu social medias */
+  container social {
+    clear: bottom right;
+    }
+    
+  container social ul li {
+    text-decoration: none;
+    list-style-type: none;
+  }
+
+
+container social ul li a {
+  font-size: small;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: flex-end;
+  list-style-type: none;
+  color: white;
+  margin: auto;
+  text-decoration:none;
+  }
+
+/* ---------Header */
+
+
+  header img {
+    width: 220px;
+    display: block;
+    margin: auto;
+  }
+
+  h1 {
+ font-family: Quattrocento regular;
+ text-transform: uppercase;
+ text-align: center;
+ font-size: 1em;
+ line-height: 1.1em;
+ color: #b78f99;
+ margin: 2em 0px;
+  }
+
+  #presentation {
+  
+    background-position: center;
+    font-family: Quattrocento;
+    text-align: justify;
+    margin : 4vh;
+    background-size: cover;
+  }
+
+/* ---------Main */
+
+#container_main {
+background-color: floralwhite;
+padding-top: 0.1em;
+padding-bottom: 0.5em;
+}
+
+
+.duo {
+  display: flex;
+  background-color: #f2e9ec;
+  border: floralwhite 2px;
+ }
+
+ .col {
+  flex: 1; 
+ }
+
+#product_1 {
+  background-image: url("../img/headphones.png");
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+ }
+
+  
+
+.comment_product {
+  background-color: #baa4a6;
+  color:#f2e9ec;
+  line-height: 1.2em;
+  font-size: 0.7em;
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-around;
+  align-content: space-around;
+}
+
+.price {
+  color: #e3e8e7;
+  font-family: another_day_v2;
+  font-size: 3em;
+  text-align: center;
+}
+
+.button {
+  background-color: #f2e9ec;
+  color: #221b1d;
+  border:#eddad6 1em;
+}
+
+.button:hover {
+  background: #baa4a6;
+  color: #f2e9ec;
+  border:#f2e9ec 1em;
+}
+  /* <!-- ---------Produit 2-------- --> */
+
+#product_2 {
+    background-image: url("../img/notebook.jpg");
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+   }
+  
+
+/* <!-- ---------Produit 3-------- --> */
+
+#product_3 {
+  background-image: url("../img/claviers.png");
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+ }
+
+ #byebye {
+   background-color: floralwhite;
+ }
+
+/* <!-- ---------Footer-------- --> */
+
+section {
+background-color: #b78f99 ;
+height: 10vh;
+margin: 0px;
+padding: 0px;
+display: flex;
+}
+
+section a {
+  font-size: small;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: flex-end;
+  list-style-type: none;
+  color: #f2e9ec;
+  margin: auto;
+  text-decoration:none;
+}
+
 
 /* ==========================================================================
    Helper classes
