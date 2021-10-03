@@ -1,0 +1,25 @@
+#img {
+    height: auto;
+    text-align: center;
+}
+.button {
+    background-color: #b78f99;
+    color: #f2e9ec;
+    text-align: center;
+}
+
+.price{
+    color: #b78f99;
+}
+
+.duo_price {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: space-around;
+}
+
+#container_button {
+ display: flex;
+ justify-content: center;
+}
