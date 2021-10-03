@@ -255,6 +255,7 @@ padding-bottom: 0.5em;
   background-color: #f2e9ec;
   color: #221b1d;
   border:#eddad6 1em;
+  height: 3em;
 }
 
 .button:hover {
