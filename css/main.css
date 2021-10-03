@@ -114,6 +114,11 @@ textarea {
     font-size: 0.8rem;
     margin: 0.8em;
   }
+
+  a {
+    text-decoration: none;
+    color: #b78f99;
+  }
    /* ----------------------Nav bar */
    nav { 
      background-color: #b78f99;
@@ -125,7 +130,7 @@ textarea {
      nav container { 
       display: flex;
       flex-direction: wrap;
-      justify-content: flex-start;
+      justify-content: space-around;
       align-items: center;
       /* position: relative; */
       /* flex-wrap: wrap; */
@@ -251,17 +256,37 @@ padding-bottom: 0.5em;
   text-align: center;
 }
 
-.button {
+.button_clair {
   background-color: #f2e9ec;
-  color: #221b1d;
-  border:#eddad6 1em;
+  border:#eddad6 1px solid;
   height: 3em;
 }
 
-.button:hover {
+.button_clair a{
+  color: #221b1d;
+
+}
+
+.button_dark {
+  background-color: #b78f99;
+  border:#eddad6 1px solid;
+  height: 3em;
+}
+
+.button_dark a{
+  color: #eddad6;
+}
+
+.button_dark:hover {
   background: #baa4a6;
+  color: #221b1d;
+  border:#f2e9ec 1px solid;
+}
+
+.button_clair:hover {
+  background: #b78f99;
   color: #f2e9ec;
-  border:#f2e9ec 1em;
+  border:#b78f99 1px solid;
 }
   /* <!-- ---------Produit 2-------- --> */
 
@@ -272,6 +297,7 @@ padding-bottom: 0.5em;
     background-repeat: no-repeat;
    }
   
+
 
 /* <!-- ---------Produit 3-------- --> */
 
