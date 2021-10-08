@@ -22,7 +22,7 @@
 
     <!-- ######################################      Nav      #############################################################-->
     <nav>
-      <container>
+      <div class="container">
         <menu>
           <ul>
             <li><a href="index.html">Accueil</a></li>
@@ -33,17 +33,16 @@
         </menu>
         <social>
           <ul>
-            <li><a href="#">Twitter</a></li>
-            <li><a href="#">Facebook</a></li>
-            <li><a href="#">Instagram</a></li>
+            <img src="/img/logo_twitter.png" class="logo_reseaux" /><li><a href="#"></a></li>
+            <img src="/img/logo_facebook.png" class="logo_reseaux" /><li><a href="#"></a></li>
+            <img src="/img/logo_insta.png" class="logo_reseaux" /><li><a href="#"></a></li>
           </ul>
         </social>
-      </container>
+      </div>
     </nav>
 
     <!-- ######################################     Header     #############################################################-->
   <header>
-    <container>
       <div  id=presentation >
       <img src="img/logo_gd.png" alt="logo de l'entreprise">
       <h1>
@@ -51,22 +50,27 @@ Bienvenue en Terre de geekette !
       </h1>
       <p>Presentation of company and praising pain was bornand expound the actual. No one rejects, dislikes, or avoids pleasure itself, because it is pleasure. </p>
     </div>
-    </container>
+    <div class="col">
+      <button id="couleur" type="button" class="button_dark">
+        <a href="presentation_entreprise.html">En savoir plus</a>
+      </button>
+    </div>  
   </header>
 
 
 
   <!-- ######################################       Main      #############################################################-->
     <main>
-      <div id="container_main">
 
         <!--     article 1      -->
           <h1>Nos produits de la semaine !</h1>
+
+
           <article class="duo">
             <div id="product_1" class="col">
             </div>
             <div class="comment_product col">
-              <h4>Headphones trop cool</h4>
+              <h2>Headphones trop cool</h2>
               <p>
                 Ceci est une petite présentation de l'objet. Ceci est une petite présentation de l'objet.
               </p>
@@ -85,7 +89,7 @@ Bienvenue en Terre de geekette !
             <!-- article 2 -->   
           <article class="duo">
             <div class="comment_product col">
-              <h4>PC portable trop cool</h4>
+              <h2>PC portable trop cool</h2>
               <p>
                 Ceci est une petite présentation de l'objet. Ceci est une petite présentation de l'objet.
               </p>
@@ -108,7 +112,7 @@ Bienvenue en Terre de geekette !
           <div id="product_3" class="col">
           </div>
           <div class="comment_product col">
-            <h4>Headphones trop cool</h4>
+            <h2>Headphones trop cool</h2>
             <p>
               Ceci est une petite présentation de l'objet. Ceci est une petite présentation de l'objet.
             </p>
@@ -125,7 +129,6 @@ Bienvenue en Terre de geekette !
         </article>  
 
         <h1 id="byebye">Merci de votre visite !</h1>
-      </div>
     </main>
 
 <!-- ######################################      Footer      #############################################################-->
