@@ -146,14 +146,6 @@
       margin: 0.8em;
     }
   
-    /* h2{
-      font-family: Paradise_Thoughts_Typeface;
-      text-transform: capitalize;
-      text-align: center;
-      font-size: 3em;
-      margin: 0.8em;
-    } */
-  
   
     a {
       text-decoration: none;
@@ -196,8 +188,16 @@
   
      /* ############################################################       SOCIAL MEDIAS      ############################################################# */
 
-     .logo_reseaux{
-       display: none;
+     social ul {
+      display: inline-flex;
+    }
+
+    social ul img {
+      max-height: 1.6em;
+    }
+
+     social ul li{
+       margin: 0.6em;
      }
 
     /* ############################################################       HEADER      ############################################################# */
