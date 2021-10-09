@@ -146,14 +146,6 @@
       margin: 0.8em;
     }
   
-    /* h2{
-      font-family: Paradise_Thoughts_Typeface;
-      text-transform: capitalize;
-      text-align: center;
-      font-size: 3em;
-      margin: 0.8em;
-    } */
-  
   
     a {
       text-decoration: none;
@@ -196,8 +188,16 @@
   
      /* ############################################################       SOCIAL MEDIAS      ############################################################# */
 
-     .logo_reseaux{
-       display: none;
+     social ul {
+      display: inline-flex;
+    }
+
+    social ul img {
+      max-height: 1.6em;
+    }
+
+     social ul li{
+       margin: 0.6em;
      }
 
     /* ############################################################       HEADER      ############################################################# */
@@ -263,6 +263,7 @@
     border:#eddad6 1px solid;
     padding: 0.4em 0.8em;
     margin: 0.6em;
+    border-radius: 10px;
   }
   
   .button_clair a{
@@ -283,6 +284,8 @@
     border:#eddad6 1px solid;
     padding: 0.4em 0.8em;
     margin-bottom: 1.8em;
+    border-radius: 10px;
+    color: #f2e9ec;
   }
   
   .button_dark a{
@@ -291,7 +294,7 @@
   
   .button_dark:hover {
     background: #baa4a6;
-    color: #221b1d;
+    color: #f2e9ec;
     border:#f2e9ec 1px solid;
   }
 
@@ -393,9 +396,118 @@
     justify-content: center;
  }
 }  
+
+/* ############################################################       FORM    ############################################################# */
   
+form {
+  display: flex;
+  flex-direction: column;
+  justify-content: wrap;
+  padding: 1em 1em 1em 1em;
+  background-color: floralwhite;
+  margin: 1em;
+  border-radius: 10px;
+}
 
+form h1 {
+  font-family: Quattrocento-Bold;
+  font-size:small;
+  margin: 0;
+}
 
+form .left{
+  overflow: hidden;
+}
+form label {
+  font-size: small;
+}
+
+form .separation {
+ width: 80%;
+ height: 2px;
+ background-color: #b78f99; 
+ margin: 1.5em;
+}
+
+form .body_form {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+  margin-bottom: 2em;
+}
+
+form .body_form .box{
+  position: relative;
+  margin-top: 0.7em;
+  display: flex;
+  flex-direction: column;
+}
+
+form .body_form .left .box input {
+  margin-top: 0.7em;
+  padding: 0.2em 0.2em 0.2em 2em;
+  border: solid 1.5px #f2e9ec;
+  border-radius: 5px;
+  outline-color: #b78f99;
+}
+
+form .body_form .right .box input, select {
+  margin: 1em;
+  padding: 0.2em 0.2em 0.2em 0.2em;
+  border: solid 1.5px #f2e9ec;
+  border-radius: 5px;
+  outline-color: #b78f99;
+
+}
+ i {
+   position: absolute;
+   left: 8px;
+   top: 40px;
+   color: #b78f99;
+   display: none;
+ }
+
+ form .body_form .right{
+   margin-left: 0em;
+   overflow: hidden;
+ }
+
+ #box_textarea {
+   display: flex;
+   flex-direction: column;
+   margin-left: 1em;
+   height: 90%;
+ }
+
+ #box_textarea textarea {
+   margin-top: 0.7em;
+   border: solid 1.5px #f2e9ec;
+   border-radius: 5px;
+   outline-color: #b78f99;
+   padding: 1em;
+   resize: none;
+   height: 36vh;
+ }
+
+  .footer_form{
+   text-align: center;
+ }
+
+ .footer_form button{
+   margin-top: 2em;
+   cursor: pointer;
+  transition: transform 0.5s;
+ }
+
+ .footer_form button:hover{
+  transform: scale(1.08);
+ }
+
+ input:invalid {
+  border: 2px dashed red;
+}
+
+}
 
 
 @media screen and (min-width: 450px) {
@@ -437,6 +549,12 @@
   }
   .logo_reseaux{
     display: inline-flex;
+  }
+
+/* ############################ FORM ############################ */
+
+  form label {
+    font-size: medium;
   }
 
 
@@ -483,6 +601,104 @@
     display: block;
     margin: 4em auto;
   }
+
+  /* ############################################################       FORM    ############################################################# */
+  
+form {
+  display: flex;
+  flex-direction: column;
+  justify-content: wrap;
+  padding: 5em 3em 4em 3em;
+  background-color: floralwhite;
+  margin: 0 auto 5em auto;
+  border-radius: 10px;
+  max-width: 80%;
+}
+
+form h1 {
+  font-family: Quattrocento-Bold;
+  font-size: large;
+  margin: 0;
+}
+
+form .separation {
+ width: 100%;
+ height: 2px;
+ background-color: #b78f99; 
+ margin: 1.5em;
+}
+
+form .body_form {
+  display: flex;
+  flex-wrap: wrap;
+  margin-bottom: 2em;
+}
+
+form .body_form .box{
+  position: relative;
+  margin-top: 0.7em;
+  display: flex;
+  flex-direction: column;
+}
+
+form .body_form .left .box input {
+  margin-top: 0.7em;
+  padding: 0.2em 0.2em 0.2em 2em;
+  border: solid 1.5px #f2e9ec;
+  border-radius: 5px;
+  outline-color: #b78f99;
+}
+
+form .body_form .right .box input, select {
+  margin: 2em 1.5em 2em 2.5em;
+  padding: 0.2em 0.2em 0.2em 2em;
+  border: solid 1.5px #f2e9ec;
+  border-radius: 5px;
+  outline-color: #b78f99;
+
+}
+ i {
+   position: absolute;
+   left: 8px;
+   top: 40px;
+   color: #b78f99;
+ }
+
+ form label {
+  font-size: medium;
+}
+ form .body_form .right{
+   margin-left: 2em;
+ }
+
+ #box_textarea {
+   display: flex;
+   flex-direction: column;
+   margin-left: 2.7em;
+   height: 90%;
+ }
+
+ #box_textarea textarea {
+   margin-top: 0.7em;
+   border: solid 1.5px #f2e9ec;
+   border-radius: 5px;
+   outline-color: #b78f99;
+   padding: 1em;
+   resize: none;
+   height: 36vh;
+ }
+
+ .footer_form button{
+   margin-top: 2em;
+   cursor: pointer;
+  transition: transform 0.5s;
+ }
+
+ .footer_form button:hover{
+  transform: scale(1.08);
+
+}
+
 
 
 }
