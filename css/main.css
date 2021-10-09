@@ -263,6 +263,7 @@
     border:#eddad6 1px solid;
     padding: 0.4em 0.8em;
     margin: 0.6em;
+    border-radius: 10px;
   }
   
   .button_clair a{
@@ -283,6 +284,8 @@
     border:#eddad6 1px solid;
     padding: 0.4em 0.8em;
     margin-bottom: 1.8em;
+    border-radius: 10px;
+    color: #f2e9ec;
   }
   
   .button_dark a{
@@ -291,7 +294,7 @@
   
   .button_dark:hover {
     background: #baa4a6;
-    color: #221b1d;
+    color: #f2e9ec;
     border:#f2e9ec 1px solid;
   }
 
@@ -393,10 +396,76 @@
     justify-content: center;
  }
 }  
+
+/* ############################################################       FORM    ############################################################# */
   
+form {
+  display: flex;
+  flex-direction: column;
+  justify-content: wrap;
+  padding: 3em 3em 6em 3em;
+  background-color: floralwhite;
+  margin: 7em;
+  border-radius: 10px;
+}
 
+form h1 {
+  font-family: Quattrocento-Bold;
+  font-size: large;
+  margin: 0;
+}
 
+form .separation {
+ width: 100%;
+ height: 2px;
+ background-color: #b78f99; 
+ margin: 1.5em;
+}
 
+form .body_form {
+  display: flex;
+  flex-wrap: wrap;
+  margin-bottom: 2em;
+}
+
+form .body_form .box{
+  position: relative;
+  margin-top: 0.7em;
+  display: flex;
+  flex-direction: column;
+}
+
+form .body_form .left .box input {
+  margin-top: 0.7em;
+  padding: 0.2em 0.2em 0.2em 2em;
+  border: solid 1.5px #f2e9ec;
+  border-radius: 5px;
+  outline-color: #b78f99;
+}
+
+form .body_form .right .box input, select {
+  margin: 2em 1.5em 2em 2.5em;
+  padding: 0.2em 0.2em 0.2em 2em;
+  border: solid 1.5px #f2e9ec;
+  border-radius: 5px;
+  outline-color: #b78f99;
+
+}
+ i {
+   position: absolute;
+   left: 8px;
+   top: 40px;
+   color: #b78f99;
+ }
+
+ form .body_form .right{
+   margin-left: 2em;
+ }
+
+ #box_textarea {
+   display: flex;
+   flex-direction: column;
+ }
 
 @media screen and (min-width: 450px) {
 
