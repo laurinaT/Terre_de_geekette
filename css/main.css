@@ -403,7 +403,203 @@ form {
   display: flex;
   flex-direction: column;
   justify-content: wrap;
-  padding: 3em 3em 6em 3em;
+  padding: 1em 1em 1em 1em;
+  background-color: floralwhite;
+  margin: 1em;
+  border-radius: 10px;
+}
+
+form h1 {
+  font-family: Quattrocento-Bold;
+  font-size:small;
+  margin: 0;
+}
+
+form .left{
+  overflow: hidden;
+}
+form label {
+  font-size: small;
+}
+
+form .separation {
+ width: 80%;
+ height: 2px;
+ background-color: #b78f99; 
+ margin: 1.5em;
+}
+
+form .body_form {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+  margin-bottom: 2em;
+}
+
+form .body_form .box{
+  position: relative;
+  margin-top: 0.7em;
+  display: flex;
+  flex-direction: column;
+}
+
+form .body_form .left .box input {
+  margin-top: 0.7em;
+  padding: 0.2em 0.2em 0.2em 2em;
+  border: solid 1.5px #f2e9ec;
+  border-radius: 5px;
+  outline-color: #b78f99;
+}
+
+form .body_form .right .box input, select {
+  margin: 1em;
+  padding: 0.2em 0.2em 0.2em 0.2em;
+  border: solid 1.5px #f2e9ec;
+  border-radius: 5px;
+  outline-color: #b78f99;
+
+}
+ i {
+   position: absolute;
+   left: 8px;
+   top: 40px;
+   color: #b78f99;
+   display: none;
+ }
+
+ form .body_form .right{
+   margin-left: 0em;
+   overflow: hidden;
+ }
+
+ #box_textarea {
+   display: flex;
+   flex-direction: column;
+   margin-left: 1em;
+   height: 90%;
+ }
+
+ #box_textarea textarea {
+   margin-top: 0.7em;
+   border: solid 1.5px #f2e9ec;
+   border-radius: 5px;
+   outline-color: #b78f99;
+   padding: 1em;
+   resize: none;
+   height: 36vh;
+ }
+
+ .footer_form button{
+   margin-top: 2em;
+   cursor: pointer;
+  transition: transform 0.5s;
+ }
+
+ .footer_form button:hover{
+  transform: scale(1.08);
+
+}
+
+
+@media screen and (min-width: 450px) {
+
+  
+  
+  p {
+    margin: 0.9em;
+    font-size: medium;
+  }
+
+  h1 {
+   font-family: Quattrocento-Bold;
+   text-transform: uppercase;
+   text-align: center;
+   font-size: 1em;
+   line-height: 1.1em;
+   color: #b78f99;
+   margin: 3em 0px;
+    }
+
+  h2{
+   font-family: Quattrocento-Bold;
+   text-transform: uppercase;
+   text-align: center;
+   font-size: 1.2rem;
+   margin: 0.8em;
+ }
+
+ .comment_product {
+  line-height: 2.2em;
+  font-size: medium;
+  }
+
+  header img {
+    width: 330px;
+    display: block;
+    margin: 4em auto;
+  }
+  .logo_reseaux{
+    display: inline-flex;
+  }
+
+/* ############################ FORM ############################ */
+
+  form label {
+    font-size: medium;
+  }
+
+
+}
+
+
+
+@media screen and (min-width: 800px) {
+
+  .duo {
+    min-height: 45vh;
+  }
+  
+  p {
+    margin: 0.9em;
+    font-size: medium;
+  }
+
+  h1 {
+   font-family: Quattrocento-Bold;
+   text-transform: uppercase;
+   text-align: center;
+   font-size: 1em;
+   line-height: 1.1em;
+   color: #b78f99;
+   margin: 3em 0px;
+    }
+
+  h2{
+   font-family: Quattrocento-Bold;
+   text-transform: uppercase;
+   text-align: center;
+   font-size: 1.2rem;
+   margin: 0.8em;
+ }
+
+ .comment_product {
+  line-height: 2.2em;
+  font-size: medium;
+  }
+
+  header img {
+    width: 330px;
+    display: block;
+    margin: 4em auto;
+  }
+
+  /* ############################################################       FORM    ############################################################# */
+  
+form {
+  display: flex;
+  flex-direction: column;
+  justify-content: wrap;
+  padding: 5em 3em 4em 3em;
   background-color: floralwhite;
   margin: 7em;
   border-radius: 10px;
@@ -458,6 +654,9 @@ form .body_form .right .box input, select {
    color: #b78f99;
  }
 
+ form label {
+  font-size: medium;
+}
  form .body_form .right{
    margin-left: 2em;
  }
@@ -465,93 +664,31 @@ form .body_form .right .box input, select {
  #box_textarea {
    display: flex;
    flex-direction: column;
+   margin-left: 2.7em;
+   height: 90%;
  }
 
-@media screen and (min-width: 450px) {
-
-  
-  
-  p {
-    margin: 0.9em;
-    font-size: medium;
-  }
-
-  h1 {
-   font-family: Quattrocento-Bold;
-   text-transform: uppercase;
-   text-align: center;
-   font-size: 1em;
-   line-height: 1.1em;
-   color: #b78f99;
-   margin: 3em 0px;
-    }
-
-  h2{
-   font-family: Quattrocento-Bold;
-   text-transform: uppercase;
-   text-align: center;
-   font-size: 1.2rem;
-   margin: 0.8em;
+ #box_textarea textarea {
+   margin-top: 0.7em;
+   border: solid 1.5px #f2e9ec;
+   border-radius: 5px;
+   outline-color: #b78f99;
+   padding: 1em;
+   resize: none;
+   height: 36vh;
  }
 
- .comment_product {
-  line-height: 2.2em;
-  font-size: medium;
-  }
+ .footer_form button{
+   margin-top: 2em;
+   cursor: pointer;
+  transition: transform 0.5s;
+ }
 
-  header img {
-    width: 330px;
-    display: block;
-    margin: 4em auto;
-  }
-  .logo_reseaux{
-    display: inline-flex;
-  }
-
+ .footer_form button:hover{
+  transform: scale(1.08);
 
 }
 
-
-
-@media screen and (min-width: 800px) {
-
-  .duo {
-    min-height: 45vh;
-  }
-  
-  p {
-    margin: 0.9em;
-    font-size: medium;
-  }
-
-  h1 {
-   font-family: Quattrocento-Bold;
-   text-transform: uppercase;
-   text-align: center;
-   font-size: 1em;
-   line-height: 1.1em;
-   color: #b78f99;
-   margin: 3em 0px;
-    }
-
-  h2{
-   font-family: Quattrocento-Bold;
-   text-transform: uppercase;
-   text-align: center;
-   font-size: 1.2rem;
-   margin: 0.8em;
- }
-
- .comment_product {
-  line-height: 2.2em;
-  font-size: medium;
-  }
-
-  header img {
-    width: 330px;
-    display: block;
-    margin: 4em auto;
-  }
 
 
 }
