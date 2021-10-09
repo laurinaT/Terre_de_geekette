@@ -489,6 +489,10 @@ form .body_form .right .box input, select {
    height: 36vh;
  }
 
+  .footer_form{
+   text-align: center;
+ }
+
  .footer_form button{
    margin-top: 2em;
    cursor: pointer;
@@ -497,6 +501,11 @@ form .body_form .right .box input, select {
 
  .footer_form button:hover{
   transform: scale(1.08);
+ }
+
+ input:invalid {
+  border: 2px dashed red;
+}
 
 }
 
@@ -601,8 +610,9 @@ form {
   justify-content: wrap;
   padding: 5em 3em 4em 3em;
   background-color: floralwhite;
-  margin: 7em;
+  margin: 0 auto 5em auto;
   border-radius: 10px;
+  max-width: 80%;
 }
 
 form h1 {

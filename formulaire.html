@@ -59,22 +59,22 @@
         <div class="left">
             <div class="box">
               <label>Votre prénom</label>
-              <input type="text">
+              <input type="text" minlength="2" maxlength="40">
               <i class="fas fa-user-astronaut"></i>
             </div>
             <div class="box">
               <label>Votre nom</label>
-              <input type="text">
+              <input type="text" required minlength="2" maxlength="40">
               <i class="fas fa-user-ninja"></i>
             </div>
             <div class="box">
               <label>Votre numéro de téléphone</label>
-              <input type="number">
+              <input type="tel" minlength="10" maxlength="10">
               <i class="fas fa-mobile-alt"></i>
             </div>
             <div class="box">
               <label>Votre adresse email</label>
-              <input type="email">
+              <input type="email" placeholder="votre_email@site.com" required>
               <i class="far fa-paper-plane"></i>
             </div>
             <div class="box">
@@ -88,17 +88,18 @@
           
         <div class="right">
             <div class="box">
-              <select name="choices" size=1 placeholder="Objet">
-              <option>Informations</option>
-              <option>Réclamations</option>
-              <option>Partenariat</option>
-              <option>Autre...</option>
+              <select name="choices" size=1 required>
+              <option value="">Objet du message</option>
+              <option value="1">Informations</option>
+              <option value="2">Réclamations</option>
+              <option value="3">Partenariat</option>
+              <option value="4">Autre...</option>
             </select>
             </div>
             <div id="box_textarea">
             <label>Votre message</label>
             <i class="far fa-comment"></i>
-            <textarea placeholder="Saisissez ici...">
+            <textarea placeholder="Saisissez ici..." rows="1" aria-required="true">
             </textarea>
           </div>
        
@@ -106,7 +107,7 @@
       
       </div>
       <div class="footer_form" align="center">
-        <button id="couleur" type="button" class="button_dark">Envoyer votre message</button>
+        <button id="couleur" class="button_dark" type="submit">Envoyer votre message</button>
       </div>
     </form>
 
