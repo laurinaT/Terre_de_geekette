@@ -597,7 +597,10 @@ form .body_form .right .box input, select {
 
 
 @media screen and (min-width: 450px) {
-
+  html {
+    background-color: #f2e9ec;
+    background-image: url(/img/essai_fond.png);
+  }
   
   
   p {
