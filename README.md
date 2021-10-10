@@ -9,9 +9,9 @@ Le site est constitué de quatre pages :
 - page présentation de l'entreprise  
   
 
-De nouvelles pages ont été ajoutée :  
+De nouvelles pages ont été ajoutées :  
 
-- Page Contenant un formulaire --> Contact
+- Page contenant un formulaire --> Contact
 - Page Prestation contenant un tableau  
   
 Le responsive est encore en cours..
