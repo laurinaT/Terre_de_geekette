@@ -275,6 +275,15 @@
     text-align: center;
     margin: 0.4em;
   }
+
+/* Pour prix foncés */
+  .price_2{
+    color: #b78f99;
+    font-family: 'paradise_thoughtsregular';
+    font-size: 2.3em;
+    text-align: center;
+    margin: 0.1em;
+  }
   
   .button_clair {
     background-color: #f2e9ec;
@@ -371,6 +380,18 @@
     text-decoration:none;
   }
 
+  footer section div li{
+    list-style-type: none;
+    margin: 0 0.2em;
+}
+
+footer section div { 
+  display: flex;
+  flex-direction: wrap;
+  justify-content:space-between;
+  align-items: center;
+  }
+
  /* ############################################################       autres pages     ############################################################# */
 
  .img {
@@ -419,6 +440,38 @@
   text-align: justify;
   max-width: 60%;
   margin: auto;
+}
+/* --------------------- page prestations ------------------ */
+
+.table_style {
+  border-collapse: collapse;
+  min-width: 1em;
+  max-width: 90%;
+  box-shadow: 0 1em 2em #b78f99;
+  margin:4em auto 6em auto;
+  border: 1px solid #b78f99;
+
+}
+
+thead tr {
+  background-color: #b78f99;
+  color:#f2e9ec;
+  text-align: center;
+
+}
+
+th, td{
+  padding: 0.2em 0.7em; 
+}
+
+tbody tr, td, th {
+  border: 1px solid #b78f99;
+}
+
+tbody tr:nth-child(even){
+  background-color: #f2e9ec;
+
+
 }
 
 
