@@ -6,6 +6,10 @@ Le site est constitué de quatre pages :
 - page article
 - page mentions légales
 - page présentation de l'entreprise
+De nouvelles pages ont été ajoutée :
+- Page Contenant un formulaire --> Contact
+- Page Prestation contenant un tableau
+Le responsive est encore en cours..
 
 Merci pour votre visite
 
