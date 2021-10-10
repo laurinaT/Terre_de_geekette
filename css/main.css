@@ -124,10 +124,6 @@
   
     }
   
-     p {
-       margin: 0.6em;
-     }
-  
      h1 {
       font-family: Quattrocento-Bold;
       text-transform: uppercase;
@@ -135,7 +131,7 @@
       font-size: 1em;
       line-height: 1.1em;
       color: #b78f99;
-      margin: 2em 0px;
+      margin: 0px 0px 2em 0px;
        }
   
      h2{
@@ -151,6 +147,14 @@
       text-decoration: none;
       color: #f2e9ec;
       font-size: small;
+    }
+
+    .separation {
+      height: 0.1em;
+      background-color: #b78f99;
+      margin: 1em auto 4em auto;
+      max-width: 60%;
+  
     }
   
   
@@ -202,7 +206,11 @@
 
     /* ############################################################       HEADER      ############################################################# */
   
-  
+    header {
+      padding-bottom: 4em;
+    }
+
+
     header img {
       width: 220px;
       display: block;
@@ -216,21 +224,32 @@
       background-position: center;
       font-family: Quattrocento;
       text-align: justify;
-      margin : 4vh;
+      margin : 3em;
       background-size: cover;
+    }
+
+    #presentation img{
+      margin-bottom: 3em;
     }
   
     /* ############################################################       MAIN      ############################################################# */
   
+    main {
+      padding: 4em 5% 1em 5%;
+      background-color: floralwhite;
+    }
+
   .duo {
     display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
     background-color: #f2e9ec;
     border: floralwhite 2px;
     min-height: 11em;
    }
   
    .col {
-    flex: 1; 
+    flex: 1;
     display: flex;
     justify-content: center;
    }
@@ -252,10 +271,18 @@
   .price {
     color: #e3e8e7;
     font-family: 'paradise_thoughtsregular';
-    font-size: 2em;
+    font-size: 3.5em;
     text-align: center;
     margin: 0.4em;
-    padding-bottom: 0.75em;
+  }
+
+/* Pour prix foncés */
+  .price_2{
+    color: #b78f99;
+    font-family: 'paradise_thoughtsregular';
+    font-size: 2.3em;
+    text-align: center;
+    margin: 0.1em;
   }
   
   .button_clair {
@@ -329,7 +356,6 @@
   
    #byebye {
      background-color: floralwhite;
-     margin: 0px;
      padding: 3em;
    }
   
@@ -354,11 +380,23 @@
     text-decoration:none;
   }
 
+  footer section div li{
+    list-style-type: none;
+    margin: 0 0.2em;
+}
+
+footer section div { 
+  display: flex;
+  flex-direction: wrap;
+  justify-content:space-between;
+  align-items: center;
+  }
+
  /* ############################################################       autres pages     ############################################################# */
 
  .img {
   height: auto;
-  text-align: center;
+  margin: 4em auto;
   border: solid 6px #b78f99;
 
  }
@@ -396,6 +434,46 @@
     justify-content: center;
  }
 }  
+/* --------------------- page entreprise ------------------ */
+
+.p {
+  text-align: justify;
+  max-width: 60%;
+  margin: auto;
+}
+/* --------------------- page prestations ------------------ */
+
+.table_style {
+  border-collapse: collapse;
+  min-width: 1em;
+  max-width: 90%;
+  box-shadow: 0 1em 2em #b78f99;
+  margin:4em auto 6em auto;
+  border: 1px solid #b78f99;
+
+}
+
+thead tr {
+  background-color: #b78f99;
+  color:#f2e9ec;
+  text-align: center;
+
+}
+
+th, td{
+  padding: 0.2em 0.7em; 
+}
+
+tbody tr, td, th {
+  border: 1px solid #b78f99;
+}
+
+tbody tr:nth-child(even){
+  background-color: #f2e9ec;
+
+
+}
+
 
 /* ############################################################       FORM    ############################################################# */
   
@@ -426,7 +504,7 @@ form .separation {
  width: 80%;
  height: 2px;
  background-color: #b78f99; 
- margin: 1.5em;
+ margin: 1em auto;
 }
 
 form .body_form {
@@ -519,6 +597,12 @@ form .body_form .right .box input, select {
     font-size: medium;
   }
 
+  a {
+    text-decoration: none;
+    color: #f2e9ec;
+    font-size: medium;
+}
+
   h1 {
    font-family: Quattrocento-Bold;
    text-transform: uppercase;
@@ -564,13 +648,22 @@ form .body_form .right .box input, select {
 
 @media screen and (min-width: 800px) {
 
+
+  a {
+    text-decoration: none;
+    color: #f2e9ec;
+    font-size: large;
+}
   .duo {
-    min-height: 45vh;
+    max-height: 38vh;
+    margin: auto 6em;
   }
   
-  p {
+  #presentation p {
     margin: 0.9em;
     font-size: medium;
+    max-width: 40%;
+    margin: auto;
   }
 
   h1 {
@@ -580,7 +673,7 @@ form .body_form .right .box input, select {
    font-size: 1em;
    line-height: 1.1em;
    color: #b78f99;
-   margin: 3em 0px;
+   margin: 0px 0px 2em 0px;
     }
 
   h2{
@@ -592,7 +685,6 @@ form .body_form .right .box input, select {
  }
 
  .comment_product {
-  line-height: 2.2em;
   font-size: medium;
   }
 
@@ -625,7 +717,7 @@ form .separation {
  width: 100%;
  height: 2px;
  background-color: #b78f99; 
- margin: 1.5em;
+ margin: 1.5em auto;
 }
 
 form .body_form {
