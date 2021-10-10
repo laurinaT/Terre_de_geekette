@@ -84,8 +84,6 @@
   
   
       /* ############################################################       GLOBAL      ############################################################# */
-  
-@media screen and (min-width: 0px) {
 
 
      @font-face {
@@ -168,14 +166,14 @@
       nav li{
           list-style-type: none;
           margin: 0 0.2em;
-  }
+      }
   
       nav div { 
         display: flex;
         flex-direction: wrap;
         justify-content:space-between;
         align-items: center;
-        }
+      }
   
         .container {
           display: flex;
@@ -243,15 +241,21 @@
     display: flex;
     justify-content: center;
     flex-wrap: wrap;
+    flex-direction: column;
     background-color: #f2e9ec;
     border: floralwhite 2px;
     min-height: 11em;
    }
+
+   .reverse {
+    flex-direction: column;
+   }
   
    .col {
-    flex: 1;
-    display: flex;
     justify-content: center;
+    display: block;
+    height: 40vh;
+    
    }
   
  
@@ -276,7 +280,7 @@
     margin: 0.4em;
   }
 
-/* Pour prix foncés */
+  /* Pour prix foncés */
   .price_2{
     color: #b78f99;
     font-family: 'paradise_thoughtsregular';
@@ -383,9 +387,9 @@
   footer section div li{
     list-style-type: none;
     margin: 0 0.2em;
-}
+  }
 
-footer section div { 
+  footer section div { 
   display: flex;
   flex-direction: wrap;
   justify-content:space-between;
@@ -433,13 +437,18 @@ footer section div {
     flex-direction: column;
     justify-content: center;
  }
-}  
+ 
 /* --------------------- page entreprise ------------------ */
 
 .p {
   text-align: justify;
   max-width: 60%;
   margin: auto;
+}
+
+#video {
+  margin: 3em auto 4em auto;
+  text-align: center;
 }
 /* --------------------- page prestations ------------------ */
 
@@ -583,9 +592,8 @@ form .body_form .right .box input, select {
 
  input:invalid {
   border: 2px dashed red;
-}
+  }
 
-}
 
 
 @media screen and (min-width: 450px) {
@@ -601,7 +609,7 @@ form .body_form .right .box input, select {
     text-decoration: none;
     color: #f2e9ec;
     font-size: medium;
-}
+  }
 
   h1 {
    font-family: Quattrocento-Bold;
@@ -620,9 +628,21 @@ form .body_form .right .box input, select {
    font-size: 1.2rem;
    margin: 0.8em;
  }
+/* ------------------------- products ---------------------- */
+.duo {
+  flex-direction: row;
+}
+.reverse {
+  flex-direction: row-reverse;
+ }
+
+ .col {
+  flex: 1;
+  display: flex;
+  height: auto;
+  }
 
  .comment_product {
-  line-height: 2.2em;
   font-size: medium;
   }
 
